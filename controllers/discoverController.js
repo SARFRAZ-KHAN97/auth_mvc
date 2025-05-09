@@ -44,10 +44,7 @@ async function getTopRatedMovies(req, res) {
 async function getCurrentMovies(req, res) {
     
     const currentMovieList= await getMediaList(nowPlaying);
-    res.status(200).send({
-        status: "success",
-        message: currentMovieList
-    })
+    res.status(200).send(currentMovieList);
 
 }
 

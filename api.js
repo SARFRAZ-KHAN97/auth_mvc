@@ -40,6 +40,10 @@ app.use("/", function(req, res) {
   res.status(200).send("Welcome to my API");
 })
 
+
+app.use("/hi", function(req, res) {
+  res.status(200).send("Hello my friend");
+})
 //Handler functions ->users
 
 
